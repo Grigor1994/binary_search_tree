@@ -13,5 +13,6 @@ public class Main {
         System.out.println(tree.contains(4));
         tree.add(4);
         System.out.println(tree.contains(4));
+        tree.inOrder();
     }
 }

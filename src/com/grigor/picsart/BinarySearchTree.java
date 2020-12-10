@@ -79,4 +79,16 @@ public class BinarySearchTree {
     private Integer min(Node root) {
         return root.left == null ? root.value : min(root.left);
     }
+
+    public void inOrder(){
+        traverseInOrder(head);
+    }
+
+    private void traverseInOrder(Node node) {
+        if (node != null) {
+            traverseInOrder(node.left);
+            System.out.print(" " + node.value);
+            traverseInOrder(node.right);
+        }
+    }
 }
